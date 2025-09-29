@@ -10,6 +10,7 @@ def get_files_info(working_directory, directory="."):
     
     if not os.path.isdir(target_abs):
         return f'Error: "{directory}" is not a directory'
+    
     try:
         lines = []
         for name in os.listdir(target_abs):
